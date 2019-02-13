@@ -176,3 +176,57 @@ html {
   bottom: 8%;
   left: 8%;
 }
+.container .content-container {
+  padding: 5% 8%;
+}
+.container .content-container .home-top-content-container {
+  display: flex;
+  margin-bottom: 8rem;
+}
+.container .content-container .home-top-content-container .home-top-content {
+  padding-right: 4%;
+}
+.container .content-container .home-top-content-container .home-top-content h3 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.container .content-container .home-top-content-container .home-top-content p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 4rem;
+}
+.container .content-container .home-top-content-container .home-top-content .home-page-button {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: 1px solid black;
+  padding: 1rem 2.8rem;
+}
+.container .content-container .home-middle-content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 8rem;
+}
+.container .content-container .home-middle-content-container .home-middle-content {
+  padding-left: 5%;
+}
+.container .content-container .home-middle-content-container .home-middle-content h3 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.container .content-container .home-middle-content-container .home-middle-content p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 4rem;
+}
+.container .content-container .home-middle-content-container .home-middle-content .home-page-button {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: 1px solid black;
+  padding: 1rem 2.8rem;
+}
