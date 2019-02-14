@@ -60,6 +60,8 @@ table{
 /* Your Code Goes Here */
 //initial commit
 
+@import "variables";
+
 * {
   box-sizing: border-box;
 }
@@ -92,9 +94,15 @@ html {
         .dropdown-hidden {
           display: none;
         }
+        @media @mobile {
+          padding: 2rem 1rem;
+        }
     }
   
     .jumbotron-container {
+      img {
+        width: 100%;
+      }
       position: relative;
       h2 {
         line-height: 7.5rem;
@@ -104,6 +112,12 @@ html {
         font-size: 6.5rem;
         bottom: 8%;
         left: 8%;
+        @media @mobile {
+          font-size: 5.3rem;
+          line-height: 6.5rem;
+          bottom: 10%;
+          left: 6%;
+        }
       }
     }
 
@@ -111,6 +125,12 @@ html {
       padding: 5% 8%;
       // border: 1px solid red;
       .home-top-content-container {
+        img {
+          width: 50%;
+          @media @mobile {
+            width: 100%;
+          }
+        }
         display: flex;
         margin-bottom: 8rem;
         // border: 1px solid blue;
@@ -123,19 +143,39 @@ html {
             // border: 1px solid red;
             font-size: 2.8rem;
             font-weight: bold;
+            @media @mobile {
+              text-align: center;
+              // border: 1px solid red;
+            }
           }
           p {
             font-size: 1.6rem;
             line-height: 2.4rem;
             margin-bottom: 4rem;
           }
-          .home-page-button {
-            color: black;
-            text-decoration: none;
-            font-size: 1.6rem;
-            border: 1px solid black;
-            padding: 1rem 2.8rem;
+          .home-page-button-container {
+            display: flex;
+            // border: 1px solid red;
+            .home-page-button {
+              color: black;
+              text-decoration: none;
+              font-size: 1.6rem;
+              border: 1px solid black;
+              padding: 1rem 2.8rem;
+              @media @mobile {
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+                font-size: 2.4rem;
+              }
+            }
           }
+          @media @mobile {
+            padding-right: 0;
+          }
+        }
+        @media @mobile{
+          flex-direction: column-reverse;
         }
       }
 
@@ -143,6 +183,9 @@ html {
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: 8rem;
+        img {
+          width: 50%;
+        }
         // border: 1px solid blue;
         .home-middle-content {
           // border: 1px solid orange;
@@ -187,6 +230,9 @@ html {
           display: flex;
           flex-direction: column;
           .project-image-container {
+            img {
+              width: 100%;
+            }
             padding-bottom: 5rem;
             position: relative;
             // border: 1px solid red;
