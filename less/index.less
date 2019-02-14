@@ -185,6 +185,9 @@ html {
         margin-bottom: 8rem;
         img {
           width: 50%;
+          @media @mobile {
+            width: 100%;
+          }
         }
         // border: 1px solid blue;
         .home-middle-content {
@@ -196,19 +199,38 @@ html {
             // border: 1px solid red;
             font-size: 2.8rem;
             font-weight: bold;
+            @media @mobile {
+              text-align: center;
+              font-size: 3.2rem;
+            }
           }
           p {
             font-size: 1.6rem;
             line-height: 2.4rem;
             margin-bottom: 4rem;
           }
-          .home-page-button {
-            color: black;
-            text-decoration: none;
-            font-size: 1.6rem;
-            border: 1px solid black;
-            padding: 1rem 2rem;
+          .home-page-button-container {
+            display: flex;
+            .home-page-button {
+              color: black;
+              text-decoration: none;
+              font-size: 1.6rem;
+              border: 1px solid black;
+              padding: 1rem 2rem;
+              @media @mobile {
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+                font-size: 2.4rem;
+              }
+            }
           }
+          @media @mobile {
+            padding-left: 0;
+          }
+        }
+        @media @mobile{
+          flex-direction: column-reverse;
         }
       }
 
