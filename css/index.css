@@ -330,12 +330,22 @@ html {
   padding: 3rem 22%;
   line-height: 2.4rem;
 }
+@media (max-width: 510px) {
+  .container .content-container .recent-projects .project p {
+    padding: 3rem 0%;
+  }
+}
 .container .content-container .recent-projects .project .project-image-container {
   padding-bottom: 5rem;
   position: relative;
 }
 .container .content-container .recent-projects .project .project-image-container img {
   width: 100%;
+}
+@media (max-width: 510px) {
+  .container .content-container .recent-projects .project .project-image-container img {
+    height: 20rem;
+  }
 }
 .container .content-container .recent-projects .project .project-image-container h4 {
   font-size: 2.8rem;
@@ -346,6 +356,14 @@ html {
   background-color: lightgray;
   padding: 3rem 7%;
 }
+@media (max-width: 510px) {
+  .container .content-container .recent-projects .project .project-image-container h4 {
+    text-align: center;
+    width: 90%;
+    bottom: -7%;
+    right: 5%;
+  }
+}
 .container .content-container .recent-projects .project .project-image-container h5 {
   font-size: 2.8rem;
   letter-spacing: 0.5rem;
@@ -354,6 +372,14 @@ html {
   left: 0%;
   background-color: lightgray;
   padding: 3rem 7%;
+}
+@media (max-width: 510px) {
+  .container .content-container .recent-projects .project .project-image-container h5 {
+    text-align: center;
+    width: 90%;
+    bottom: -7%;
+    left: 5%;
+  }
 }
 .container footer {
   background-color: gray;

@@ -247,13 +247,20 @@ html {
             font-size: 2rem;
             padding: 3rem 22%;
             line-height: 2.4rem;
+            @media @mobile {
+              padding: 3rem 0%;
+            }
           }
           // border: 1px solid red;
           display: flex;
           flex-direction: column;
           .project-image-container {
+            // border: 1px solid red;
             img {
               width: 100%;
+              @media @mobile {
+                height: 20rem;
+              }
             }
             padding-bottom: 5rem;
             position: relative;
@@ -266,6 +273,13 @@ html {
               right: 0%;
               background-color: lightgray;
               padding: 3rem 7%;
+              @media @mobile {
+                // border: 1px solid red;
+                text-align: center;
+                width: 90%;
+                bottom: -7%;
+                right: 5%;
+              }
             }
             h5 {
               font-size: 2.8rem;
@@ -275,6 +289,13 @@ html {
               left: 0%;
               background-color: lightgray;
               padding: 3rem 7%;
+              @media @mobile {
+                // border: 1px solid red;
+                text-align: center;
+                width: 90%;
+                bottom: -7%;
+                left: 5%;
+              }
             }
           }
         }
