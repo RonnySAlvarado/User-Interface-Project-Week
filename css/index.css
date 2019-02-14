@@ -397,15 +397,30 @@ html {
   margin-bottom: 2rem;
   font-weight: bold;
 }
+@media (max-width: 510px) {
+  .container footer .footer-top .footer-email-container h4 {
+    line-height: 3rem;
+  }
+}
 .container footer .footer-top .footer-email-container p {
   padding: 1rem 0;
   color: white;
   font-size: 1.2rem;
 }
+@media (max-width: 510px) {
+  .container footer .footer-top .footer-email-container p {
+    padding-top: 2rem;
+  }
+}
 .container footer .footer-top .footer-email-container input {
   height: 4rem;
   width: 100%;
   border-radius: 5px;
+}
+@media (max-width: 510px) {
+  .container footer .footer-top {
+    flex-direction: column;
+  }
 }
 .container footer .company-location h4 {
   font-size: 2.4rem;
@@ -418,6 +433,11 @@ html {
   font-size: 1.6rem;
   line-height: 2.8rem;
 }
+@media (max-width: 510px) {
+  .container footer .company-location {
+    margin: 1.5rem 0;
+  }
+}
 .container footer .footer-bottom {
   display: flex;
   justify-content: center;
@@ -428,4 +448,19 @@ html {
   padding: 3rem 0 1rem 7%;
   font-size: 1.2rem;
   color: white;
+}
+@media (max-width: 510px) {
+  .container footer .footer-bottom h6 {
+    padding: 3rem 0 1rem 0;
+  }
+}
+@media (max-width: 510px) {
+  .container footer .footer-bottom {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 510px) {
+  .container footer {
+    padding: 5% 5% 0 5%;
+  }
 }

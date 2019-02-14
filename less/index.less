@@ -317,17 +317,27 @@ html {
             font-size: 2.4rem;
             margin-bottom: 2rem;
             font-weight: bold;
+            @media @mobile {
+              // border: 1px solid red;
+              line-height: 3rem;
+            }
           }
           p {
             padding: 1rem 0;
             color: white;
             font-size: 1.2rem;
+            @media @mobile {
+              padding-top: 2rem;
+            }
           }
           input {
             height: 4rem;
             width: 100%;
             border-radius: 5px;
           }
+        }
+        @media @mobile {
+          flex-direction: column;
         }
       }
       .company-location {
@@ -342,6 +352,9 @@ html {
           font-size: 1.6rem;
           line-height: 2.8rem;
         }
+        @media @mobile {
+          margin: 1.5rem 0;
+        }
       }
       .footer-bottom {
         // border: 1px solid red;
@@ -353,7 +366,16 @@ html {
           padding: 3rem 0 1rem 7%;
           font-size: 1.2rem;
           color: white;
+          @media @mobile {
+            padding: 3rem 0 1rem 0;
+          }
         }
+        @media @mobile {
+          justify-content: flex-start;
+        }
+      }
+      @media @mobile {
+        padding: 5% 5% 0 5%;
       }
     }
   }
