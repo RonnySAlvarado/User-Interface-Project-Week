@@ -134,6 +134,56 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+.content-container p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.content-container .tabs-container {
+  margin: 4rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content-container .tabs-container .tabs-link {
+  width: 18rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  border: 1px solid black;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.content-container .tabs-container .tabs-link:hover {
+  background-color: steelblue;
+  color: white;
+}
+.content-container .tabs-content-container {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.content-container .tabs-content-container .tabs-content-left {
+  display: none;
+}
+.content-container .tabs-content-container .tabs-content-right {
+  display: none;
+}
+.content-container .tabs-content-container .tabs-content-selected {
+  display: flex;
+  flex-direction: column;
+}
+.content-container .tabs-content-container .tabs-content-selected h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.content-container .tabs-content-container .tabs-content-selected p {
+  width: 95%;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.content-container .tabs-content-container .tabs-content-selected img {
+  margin-top: 4rem;
+}
 * {
   box-sizing: border-box;
 }

@@ -61,6 +61,7 @@ table{
 //initial commit
 
 @import "variables";
+@import "services";
 
 * {
   box-sizing: border-box;
@@ -71,55 +72,55 @@ html {
   font-family: Roboto, Arial, sans-serif;
 }
 
-  // .container {
-  //   max-width: 1024px;
-  //   width: 100%;
-  //   margin: 0 auto;
-  //   .header-container {
-  //       // border: 1px solid red;
-  //       padding: 2rem 8rem;
-  //       background-color: lightslategray;
-  //       display: flex;
-  //       justify-content: space-between;
-  //       h2 {
-  //         // border: 1px solid red;
-  //         font-weight: bold;
-  //         font-size: 2.4rem;
-  //         color: white;
-  //       }
-  //       .dropdown-content {
-  //         display: flex;
-  //         flex-direction: column;
-  //       }
-  //       .dropdown-hidden {
-  //         display: none;
-  //       }
-  //       @media @mobile {
-  //         padding: 2rem 1rem;
-  //       }
-  //   }
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    .header-container {
+        // border: 1px solid red;
+        padding: 2rem 8rem;
+        background-color: lightslategray;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          // border: 1px solid red;
+          font-weight: bold;
+          font-size: 2.4rem;
+          color: white;
+        }
+        .dropdown-content {
+          display: flex;
+          flex-direction: column;
+        }
+        .dropdown-hidden {
+          display: none;
+        }
+        @media @mobile {
+          padding: 2rem 1rem;
+        }
+    }
   
-    // .jumbotron-container {
-    //   img {
-    //     width: 100%;
-    //   }
-    //   position: relative;
-    //   h1 {
-    //     line-height: 7.5rem;
-    //     color: white;
-    //     font-weight: bold;
-    //     position: absolute;
-    //     font-size: 6.5rem;
-    //     bottom: 8%;
-    //     left: 8%;
-    //     @media @mobile {
-    //       font-size: 5.3rem;
-    //       line-height: 6.5rem;
-    //       bottom: 10%;
-    //       left: 6%;
-    //     }
-    //   }
-    // }
+    .jumbotron-container {
+      img {
+        width: 100%;
+      }
+      position: relative;
+      h1 {
+        line-height: 7.5rem;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        font-size: 6.5rem;
+        bottom: 8%;
+        left: 8%;
+        @media @mobile {
+          font-size: 5.3rem;
+          line-height: 6.5rem;
+          bottom: 10%;
+          left: 6%;
+        }
+      }
+    }
 
     .content-container {
       padding: 5% 8%;
@@ -379,4 +380,3 @@ html {
       }
     }
   }
-
