@@ -3,18 +3,26 @@
 class Dropdown {
     constructor(element) {
       this.element = element;
-      this.button = this.element.querySelector('.dropdown-button'); //hamburger img
+      this.button = this.element.querySelector('img'); //hamburger img
       this.content = this.element.querySelector('.dropdown-content'); //all of the dropdown links
+      this.links = this.element.querySelectorAll('.dropdown-links'); //all links in navigation in case I need to use them later on
       this.button.addEventListener('click', () =>  {
         this.toggleContent();
       });
     }
     toggleContent() {
-      this.content.classList.toggle('dropdown-hidden');
-      this.button.setAttribute("src", "img/nav-hamburger-close.png"); 
+        this.content.classList.toggle('dropdown-hidden');
+
+        if (this.button.getAttribute("src") === "img/nav-hamburger-close.png"){
+            this.button.setAttribute("src", "img/nav-hamburger.png");
+        }
+        else this.button.setAttribute("src", "img/nav-hamburger-close.png");
+
+        this.element.classList.toggle('header-container-expanded');
     }
   }
-  let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+  let dropdowns = document.querySelectorAll('.header-container').forEach( dropdown => new Dropdown(dropdown));
+
 /*------------------------------------------------------------------------------------------------------*/
 
   class TabLink {
