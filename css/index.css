@@ -152,7 +152,7 @@ html {
   display: flex;
   justify-content: space-between;
 }
-.container .header-container h1 {
+.container .header-container h2 {
   font-weight: bold;
   font-size: 2.4rem;
   color: white;
@@ -175,7 +175,7 @@ html {
 .container .jumbotron-container img {
   width: 100%;
 }
-.container .jumbotron-container h2 {
+.container .jumbotron-container h1 {
   line-height: 7.5rem;
   color: white;
   font-weight: bold;
@@ -185,7 +185,7 @@ html {
   left: 8%;
 }
 @media (max-width: 510px) {
-  .container .jumbotron-container h2 {
+  .container .jumbotron-container h1 {
     font-size: 5.3rem;
     line-height: 6.5rem;
     bottom: 10%;
