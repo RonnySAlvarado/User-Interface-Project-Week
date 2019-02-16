@@ -1,20 +1,21 @@
 // JS goes here
-
+      
 class Dropdown {
     constructor(element) {
       this.element = element;
-      this.button = this.element.querySelector('.dropdown-button');
-      this.content = this.element.querySelector('.dropdown-content');
+      this.button = this.element.querySelector('.dropdown-button'); //hamburger img
+      this.content = this.element.querySelector('.dropdown-content'); //all of the dropdown links
       this.button.addEventListener('click', () =>  {
         this.toggleContent();
       });
     }
     toggleContent() {
       this.content.classList.toggle('dropdown-hidden');
+      this.button.setAttribute("src", "img/nav-hamburger-close.png"); 
     }
   }
   let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
-
+/*------------------------------------------------------------------------------------------------------*/
 
   class TabLink {
     constructor(element) {
@@ -31,6 +32,8 @@ class Dropdown {
       this.tabItem.select();
     }
   }
+
+  /*------------------------------------------------------------------------------------------------------*/
   class TabItem {
     constructor(element) {
       this.element = element;

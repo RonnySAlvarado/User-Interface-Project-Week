@@ -215,7 +215,7 @@ html {
   position: fixed;
   margin: 0 auto;
   left: 0;
-  top: 0;
+  top: 6.5%;
   display: flex;
   flex-direction: column;
   height: 100%;
