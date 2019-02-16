@@ -25,12 +25,22 @@ class Dropdown {
 
 /*------------------------------------------------------------------------------------------------------*/
 
+
+/*              <div class="tabs-container">
+						<div class="tabs-link tabs-link-selected" data-tab="1">Pre-Construction</div>
+						<div class="tabs-link" data-tab="2">Construction</div>
+						<div class="tabs-link" data-tab="3">Design Build</div>
+						<div class="tabs-link" data-tab="4">Sustainability</div>
+                </div> */
+                
+
   class TabLink {
     constructor(element) {
       this.element = element;
       this.data = this.element.dataset.tab;
-      this.itemElement = document.querySelector(`.tabs-item[data-tab="${this.data}"]`);
-      this.tabItem = new TabItem(this.itemElement);
+      this.tabsContentLeft = document.querySelector(`.tabs-content-left[data-tab="${this.data}"]`);
+      this.tabsContentRight = document.querySelector(`.tabs-content-right[data-tab="${this.data}"]`);
+      this.tabItem = new TabItem(this.tabsContentLeft, this.tabsContentRight);
       this.element.addEventListener('click', () => this.select());
     };
     select() {
@@ -43,13 +53,17 @@ class Dropdown {
 
   /*------------------------------------------------------------------------------------------------------*/
   class TabItem {
-    constructor(element) {
-      this.element = element;
+    constructor(tabsContentLeft, tabsContentRight) {
+      this.tabsContentLeft = tabsContentLeft;
+      this.tabsContentRight = tabsContentRight;
     }
     select() {
-      const items = document.querySelectorAll('.tabs-item');
-      items.forEach(item => item.classList.remove('tabs-item-selected'));
-      this.element.classList.add('tabs-item-selected');
+      const leftContent = document.querySelectorAll('.tabs-content-left');
+      const rightContent = document.querySelectorAll('.tabs-content-right');
+      leftContent.forEach(item => item.classList.remove('tabs-content-selected'));
+      rightContent.forEach(item => item.classList.remove('tabs-content-selected'));
+      this.tabsContentLeft.classList.add('tabs-content-selected');
+      this.tabsContentRight.classList.add('tabs-content-selected');
     }
   }
 

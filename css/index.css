@@ -154,8 +154,12 @@ table {
   cursor: pointer;
 }
 .content-container .tabs-container .tabs-link:hover {
-  background-color: steelblue;
+  background-color: #5998AF;
   color: white;
+}
+.content-container .tabs-container .tabs-link-selected {
+  color: white;
+  background-color: #5998AF;
 }
 .content-container .tabs-content-container {
   display: flex;
