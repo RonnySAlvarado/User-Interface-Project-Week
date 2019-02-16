@@ -192,6 +192,7 @@ html {
   font-family: Roboto, Arial, sans-serif;
 }
 .container {
+  position: relative;
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
@@ -207,15 +208,35 @@ html {
   font-size: 2.4rem;
   color: white;
 }
-.container .header-container .dropdown-content {
+.container .header-container .dropdown {
+  z-index: 2;
+}
+.container .header-container .dropdown .dropdown-content {
+  border: 1px solid red;
+  position: fixed;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  text-align: center;
 }
-.container .header-container .dropdown-hidden {
+.container .header-container .dropdown .dropdown-content .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+.container .header-container .dropdown .dropdown-content .dropdown-link:hover {
+  color: white;
+}
+.container .header-container .dropdown .dropdown-hidden {
   display: none;
 }
 @media (max-width: 510px) {
-  .container .header-container {
+  .container .header-container .dropdown {
     padding: 2rem 1rem;
   }
 }
