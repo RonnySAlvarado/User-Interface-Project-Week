@@ -218,6 +218,11 @@ html {
 .container .header-container .dropdown img {
   margin-top: 1rem;
 }
+@media (max-width: 510px) {
+  .container .header-container .dropdown img {
+    height: 3rem;
+  }
+}
 .container .header-container .dropdown .dropdown-content {
   position: fixed;
   margin: 0 auto;
@@ -246,12 +251,25 @@ html {
 .container .header-container .dropdown .dropdown-content .dropdown-link:hover {
   color: black;
 }
+@media (max-width: 510px) {
+  .container .header-container .dropdown .dropdown-content {
+    top: 13%;
+  }
+}
 .container .header-container .dropdown .dropdown-hidden {
   display: none;
 }
 @media (max-width: 510px) {
   .container .header-container .dropdown {
     padding: 2rem 1rem;
+  }
+}
+@media (max-width: 510px) {
+  .container .header-container {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 2rem 2rem;
   }
 }
 .container .header-container-expanded {

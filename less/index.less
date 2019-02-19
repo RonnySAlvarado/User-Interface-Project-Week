@@ -92,6 +92,9 @@ html {
         .dropdown {
           img {
             margin-top: 1rem;
+            @media @mobile {
+              height: 3rem;
+            }
           }
           z-index: 2;
           .dropdown-content {
@@ -123,6 +126,9 @@ html {
                 color: black;
               }
             }
+            @media @mobile {
+              top: 13%;
+            }
           }
           .dropdown-hidden {
             display: none;
@@ -131,6 +137,13 @@ html {
             padding: 2rem 1rem;
           }
         }
+      @media @mobile {
+        // border: 1px solid red;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 2rem 2rem;
+      }
     }
     .header-container-expanded {
       width: 100vw;
