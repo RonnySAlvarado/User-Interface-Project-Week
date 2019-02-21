@@ -602,3 +602,29 @@ html {
 .form-container input[type=submit]:hover {
   background-color: #45a049;
 }
+.h2-squad-header {
+  font-size: 3.6rem;
+  padding: 4rem 0;
+  text-align: center;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+section .squad {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 1px solid black;
+  margin: 2rem 0;
+}
+section .squad h3 {
+  font-size: 1.6rem;
+  padding: 1rem 10px;
+  text-align: center;
+}
+section .squad img {
+  width: 100%;
+}
